@@ -6,7 +6,9 @@ HEADERS=
 TARGET=dist/pi
 MAIN=src/pi.cpp
 
-all: $(TARGET)
+all: dist $(TARGET)
+dist:
+	mkdir dist
 clean:
 	rm dist/*.o $(TARGET)
 
